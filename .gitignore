@@ -2,3 +2,11 @@
 target
 *.iml
 .DS_Store
+BuildTools.log.txt
+work
+PortableGit*
+Bukkit
+CraftBukkit
+BuildData
+Spigot
+apache-maven*
