@@ -5,8 +5,8 @@ target
 BuildTools.log.txt
 work
 PortableGit*
-Bukkit
-CraftBukkit
-BuildData
-Spigot
-apache-maven*
+**/Bukkit
+**/CraftBukkit
+**/BuildData
+**/Spigot
+**/apache-maven*
