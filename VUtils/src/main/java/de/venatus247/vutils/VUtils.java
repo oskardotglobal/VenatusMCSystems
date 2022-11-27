@@ -54,7 +54,7 @@ public class VUtils {
 
         //select border imports based on current minecraft version
         switch (spigotVersion) {
-            case "v1_17_r1" -> worldBorderApi = new de.venatus247.vutils.utils.worldborder.v1_17_r1.VBorder();
+            case "v1_19_r1" -> worldBorderApi = new de.venatus247.vutils.utils.worldborder.v1_19_r1.VBorder();
             default -> {
                 getConsole().sendMessage(prefix + " §cUnsupported version of Minecraft!");
                 getConsole().sendMessage(prefix + " §cPlase see for supported versions here: §7https://www.spigotmc.org/resources/level-border.97328/");
