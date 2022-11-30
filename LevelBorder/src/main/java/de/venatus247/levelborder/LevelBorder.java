@@ -25,8 +25,8 @@ public class LevelBorder extends JavaPlugin {
 
     private boolean vUtilsLoaded = false;
     private static final String vUtilsPluginName = "VUtils";
-    private static final float vUtilsRequiredVersion = 1.1f;
-    private static final String vUtilsPluginUrl = "https://www.spigotmc.org/resources/vutils.97327/";
+    private static final String vUtilsRequiredVersion = "1.2.0-SNAPSHOT";
+    private static final String vUtilsPluginUrl = "https://github.com/oskardotglobal/VenatusMCSystems/releases/";
 
     public static final String prefix = "§7[§6LevelBorder§7] ";
 
@@ -51,9 +51,9 @@ public class LevelBorder extends JavaPlugin {
             getServer().getConsoleSender().sendMessage(prefix + "§cYou can download VUtils here: §7" + vUtilsPluginUrl);
             return;
         } else {
-            if(Float.parseFloat(vUtilsPlugin.getDescription().getVersion()) < vUtilsRequiredVersion) {
-                getServer().getConsoleSender().sendMessage(prefix + "§cOutdated version of '" + vUtilsPluginName + "' found!");
-                getServer().getConsoleSender().sendMessage(prefix + "§cYou can download the latest version of VUtils here: §7" + vUtilsPluginUrl);
+            if(!vUtilsPlugin.getDescription().getVersion().equals(vUtilsRequiredVersion)) {
+                getServer().getConsoleSender().sendMessage(prefix + "§cIncompatible version of '" + vUtilsPluginName + "' found - you need " + vUtilsRequiredVersion + "!");
+                getServer().getConsoleSender().sendMessage(prefix + "§cYou can download all versions of VUtils here: §7" + vUtilsPluginUrl);
                 return;
             }
         }
