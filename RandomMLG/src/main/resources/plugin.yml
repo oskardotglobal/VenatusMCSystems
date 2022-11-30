@@ -1,0 +1,10 @@
+name: RandomMLG
+author: oskardotglobal
+version: 1.0.0-SNAPSHOT
+main: global.oskar.randommlg.RandomMLG
+softdepend:
+  - VUtils
+
+commands:
+  randommlg:
+    description: Set up the RandomMLG challenge

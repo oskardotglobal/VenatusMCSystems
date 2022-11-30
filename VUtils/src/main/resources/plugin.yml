@@ -1,6 +1,8 @@
 name: VUtils
-author: VenatusSaw
-version: 1.1
+authors:
+  - VenatusSaw
+  - oskardotglobal
+version: 1.2.0-SNAPSHOT
 main: de.venatus247.vutils.Main
 
 commands:
